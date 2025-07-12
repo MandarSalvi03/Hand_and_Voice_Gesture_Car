@@ -18,14 +18,14 @@ An innovative project that enables users to control a car using **hand gestures*
 
 ## 🛠️ **Tech Stack**
 
-| Layer              | Technologies Used                                            |
-|--------------------|--------------------------------------------------------------|
-| **Hardware**           | Arduino Uno, Motors, AIvision Chip, Sensors (Mic, IR, Ultrasonic) |
-| **Software Platform**  | Python, Arduino IDE, AIvision Training App                   |
-| **Gesture Recognition**| AIvision Chip (Trained via [AIvision App](https://share.google/xSS5tZHW8Nfxlqbyy)) |
-| **Voice Recognition**  | Arduino IDE (with voice recognition code – available in repo) |
-| **Communication**      | HC-05 Bluetooth Module, Serial Comm                          |
-| **Interface**          | Android APK, Command Line / Audio Feedback                   |
+| Layer               | Technologies Used                                            |
+|---------------------|--------------------------------------------------------------|
+| **Hardware**        | Arduino Uno, Motors, AIvision Chip, Sensors (Mic, IR, Ultrasonic) |
+| **Software Platform** | Python, Arduino IDE, AIvision Training App                 |
+| **Gesture Recognition** | AIvision Chip (Trained via [AIvision App](https://share.google/xSS5tZHW8Nfxlqbyy)) |
+| **Voice Recognition**  | Arduino IDE (voice recognition code – available in repo)   |
+| **Communication**      | HC-05 Bluetooth Module, Serial Communication               |
+| **Interface**          | Android APK, Command Line / Audio Feedback                 |
 
 ---
 
@@ -40,7 +40,11 @@ An innovative project that enables users to control a car using **hand gestures*
 
 Here is the full connection diagram for our Voice-Controlled Car:
 
-![Circuit Diagram](https://raw.githubusercontent.com/MandarSalvi03/Hand_and_Voice_Gesture_Car/main/assets/obstacle-avoidance-control-robot.jpg)
+![Circuit Diagram](https://raw.githubusercontent.com/MandarSalvi03/Hand_and_Voice_Gesture_Car/main/assets/obstacle%20avoidance%20control%20robot.jpg)
+
+And here is the **actual view of the internal structure** with the AIvision chip and Arduino Uno:
+
+![inside_structure](https://github.com/user-attachments/assets/82ae7791-ecf6-45a0-b44b-82187e715c76)
 
 > 📎 *Ensure proper voltage conversion for HC-05 using 1K & 2K resistors (5V to 3.3V logic level).*
 
@@ -60,8 +64,8 @@ Here is the full connection diagram for our Voice-Controlled Car:
 - Voice commands were trained using the **Arduino IDE** and respective voice recognition modules.
 - The trained code is available in this repo under `voice_control/arduino_code.ino`
 - Common commands include:
-  - "Forward", "Stop", "Left", "Right, Open-Door"
-  - Custom trigger words can be trained and coded
+  - `"Forward"`, `"Stop"`, `"Left"`, `"Right"`, `"Open-Door"`
+  - Custom trigger words can also be trained and updated in the code
 
 ---
 
@@ -108,5 +112,5 @@ Academic Year: 2023–2024
 ## 📝 **How to Run**
 
 ```bash
-git clone https://github.com/yourusername/gesture-voice-control-car.git
-cd gesture-voice-control-car
+git clone https://github.com/MandarSalvi03/Hand_and_Voice_Gesture_Car.git
+cd Hand_and_Voice_Gesture_Car
